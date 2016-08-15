@@ -8,20 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		4A3FD82E1D621F130023DA28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3FD82D1D621F130023DA28 /* AppDelegate.swift */; };
-		4A3FD8301D621F130023DA28 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3FD82F1D621F130023DA28 /* ViewController.swift */; };
 		4A3FD8331D621F130023DA28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A3FD8311D621F130023DA28 /* Main.storyboard */; };
 		4A3FD8351D621F130023DA28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A3FD8341D621F130023DA28 /* Assets.xcassets */; };
 		4A3FD8381D621F130023DA28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A3FD8361D621F130023DA28 /* LaunchScreen.storyboard */; };
+		4A3FD8431D62205F0023DA28 /* ConsoleDisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3FD8421D62205F0023DA28 /* ConsoleDisplayViewController.swift */; };
+		4A3FD8451D6220890023DA28 /* SetDestinationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3FD8441D6220890023DA28 /* SetDestinationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4A3FD82A1D621F130023DA28 /* OuttaTime Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OuttaTime Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A3FD82D1D621F130023DA28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4A3FD82F1D621F130023DA28 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4A3FD8321D621F130023DA28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4A3FD8341D621F130023DA28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A3FD8371D621F130023DA28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A3FD8391D621F130023DA28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A3FD83F1D621F640023DA28 /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "digital-7.ttf"; sourceTree = "<group>"; };
+		4A3FD8421D62205F0023DA28 /* ConsoleDisplayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsoleDisplayViewController.swift; sourceTree = "<group>"; };
+		4A3FD8441D6220890023DA28 /* SetDestinationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetDestinationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +57,10 @@
 		4A3FD82C1D621F130023DA28 /* OuttaTime Swift */ = {
 			isa = PBXGroup;
 			children = (
+				4A3FD83F1D621F640023DA28 /* digital-7.ttf */,
 				4A3FD82D1D621F130023DA28 /* AppDelegate.swift */,
-				4A3FD82F1D621F130023DA28 /* ViewController.swift */,
+				4A3FD8421D62205F0023DA28 /* ConsoleDisplayViewController.swift */,
+				4A3FD8441D6220890023DA28 /* SetDestinationViewController.swift */,
 				4A3FD8311D621F130023DA28 /* Main.storyboard */,
 				4A3FD8341D621F130023DA28 /* Assets.xcassets */,
 				4A3FD8361D621F130023DA28 /* LaunchScreen.storyboard */,
@@ -135,8 +140,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A3FD8301D621F130023DA28 /* ViewController.swift in Sources */,
 				4A3FD82E1D621F130023DA28 /* AppDelegate.swift in Sources */,
+				4A3FD8431D62205F0023DA28 /* ConsoleDisplayViewController.swift in Sources */,
+				4A3FD8451D6220890023DA28 /* SetDestinationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +258,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "OuttaTime Swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gerusa04.OuttaTime-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -263,6 +270,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "OuttaTime Swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gerusa04.OuttaTime-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
