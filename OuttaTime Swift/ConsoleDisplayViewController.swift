@@ -13,6 +13,7 @@ protocol SetDestinationViewControllerDelegate
     func didFinishTask(dateToSet: NSDate)
 }
 
+
 class ConsoleDisplayViewController: UIViewController, SetDestinationViewControllerDelegate
 {
 
@@ -53,11 +54,9 @@ class ConsoleDisplayViewController: UIViewController, SetDestinationViewControll
     
     @IBAction func travelBackTapped(sender: UIButton)
     {
-       // speedMPHtimer.invalidate()
         
         speedMPHtimer = NSTimer.scheduledTimerWithTimeInterval(0.05, target: self, selector: "travelBackFired", userInfo: nil, repeats: true)
         
-       // print("line 56")
     }
 
     
@@ -70,9 +69,6 @@ class ConsoleDisplayViewController: UIViewController, SetDestinationViewControll
         {
             let setDateVC = segue.destinationViewController as! SetDestinationViewController
             setDateVC.delegate = self
-            
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
         }
     }
     
@@ -84,7 +80,6 @@ class ConsoleDisplayViewController: UIViewController, SetDestinationViewControll
     
     func travelBackFired()
     {
-        //print("line 85")
         // Going to count up to 88!!!
         if (originalSpeed < 88)
         {
@@ -106,8 +101,3 @@ class ConsoleDisplayViewController: UIViewController, SetDestinationViewControll
 
 }
 
-//extension ConsoleDisplayViewController: DetailViewControllerDelegate {
-//    func didFinishTask(Sender: SetDestinationViewController){
-//        
-//        }
-//}
